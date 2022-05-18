@@ -48,7 +48,7 @@ function App() {
 										<Redirect from="/login" to="/admin" />
 									)}
 								</Route>
-								<Route exact path="/client-shopping">
+								<Route exact path="/">
 									<HomePage />
 								</Route>
 								<Route path="/admin">
