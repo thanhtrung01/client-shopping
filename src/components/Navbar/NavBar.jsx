@@ -11,7 +11,7 @@ import { deleteProductToCart } from '../../actions/cart';
 
 const navbarList = [
 	{
-		path: '/',
+		path: '/client-shopping',
 		icon: 'fa-solid fa-house',
 	},
 	{
