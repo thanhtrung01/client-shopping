@@ -1,0 +1,130 @@
+.category-wrap {
+	display: flex;
+	justify-content: space-between;
+	height: 1500px;
+	background-color: #f5f5f5;
+
+	.category-left {
+		flex-basis: 18%;
+
+		.left-header {
+			display: flex;
+			align-items: center;
+			padding: 20px 0 16px;
+			border-bottom: 1px solid #ccc;
+
+			.left-header-icon {
+				font-size: 12px;
+			}
+
+			.left-header-title {
+				margin-left: 10px;
+				font-weight: 500;
+			}
+		}
+
+		.left-list-option {
+			list-style: none;
+			position: relative;
+
+			.option-active {
+				position: absolute;
+				width: 8px;
+				height: 8px;
+				fill: rgb(221, 69, 69);
+				top: 16px;
+				// +35
+				left: 4px;
+			}
+
+			.list-option {
+				padding: 10px 6px 6px 18px;
+
+				&.active {
+					color: red;
+				}
+			}
+		}
+	}
+	.category-right {
+		flex-basis: 78%;
+
+		.sort-product {
+			display: flex;
+			align-items: center;
+			height: 56px;
+			background-color: #ededed;
+			padding: 6px 10px;
+
+			.sort-item {
+				padding: 6px;
+				margin: 0 6px;
+				border-radius: 2px;
+				font-size: 15px;
+				color: #545454;
+			}
+
+			.sort-text {
+				color: #6076a3;
+			}
+
+			.sort-popular {
+				background-color: #ee4d2d;
+				color: white;
+			}
+
+			.sort-newest,
+			.sort-bestseller,
+			.sort-price {
+				padding: 8px;
+				background-color: white;
+			}
+
+			.sort-price {
+				width: 180px;
+				display: flex;
+				justify-content: space-between;
+				position: relative;
+				cursor: pointer;
+
+				&:hover {
+					.sort-price-list {
+						// display: block;
+						opacity: 1;
+					}
+				}
+
+				.sort-price-list {
+					// display: none;
+					z-index: 100;
+					position: absolute;
+					box-shadow: 0 0 10px rgb(196, 194, 194);
+					top: 32px;
+					left: 0;
+					list-style: none;
+					width: calc(100% - 6px);
+					background-color: white;
+					padding: 6px 0 0 6px;
+					border-top: 2px solid #ededed;
+					opacity: 0;
+					transition: opacity 0.25s ease;
+
+					.sort-price-list-item {
+						padding: 6px 0;
+
+						&:hover {
+							color: #ee4d2d;
+						}
+					}
+				}
+			}
+		}
+
+		.category-right-content {
+			margin-top: 10px;
+			display: flex;
+			flex-wrap: wrap;
+			gap: 8px;
+		}
+	}
+}

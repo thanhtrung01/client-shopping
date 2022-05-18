@@ -1,0 +1,98 @@
+.login {
+	color: rgb(46, 46, 47);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+
+	&-wrap {
+		width: 480px;
+		// height: 540px;
+		border: 1px solid #ccc;
+		border-radius: 6px;
+		box-shadow: 0px 0px 5px #888888;
+
+		.btn-submit {
+			display: block;
+			margin: 0 auto 0 8px;
+			width: 98%;
+			height: 38px;
+			font-size: 16px;
+			color: white;
+
+			text-align: center;
+			background-color: rgb(38, 203, 225);
+			border: none;
+			outline: none;
+			border-radius: 4px;
+			cursor: pointer;
+
+			&:hover {
+				background-color: rgb(41, 196, 216);
+			}
+		}
+	}
+}
+
+.sign-in {
+	.title {
+		padding: 30px 0 14px;
+		text-align: center;
+	}
+
+	.form-in {
+		padding: 12px 30px 40px;
+
+		.form-input {
+			position: relative;
+			margin-bottom: 20px;
+
+			.input-name {
+				display: block;
+				margin-bottom: 10px;
+			}
+
+			.input-text {
+				width: 90%;
+				height: 34px;
+				border: 1px solid #ccc;
+				outline: none;
+				padding-left: 46px;
+
+				border-radius: 4px;
+			}
+
+			.form-icon {
+				position: absolute;
+				top: 39px;
+				left: 18px;
+			}
+
+			.hidden-input {
+				position: absolute;
+				top: 40px;
+				right: 12px;
+			}
+
+			.input-valid {
+				margin: 6px 0 0 4px;
+				font-size: 14px;
+				color: rgb(219, 98, 98);
+			}
+		}
+
+		.wrap-text {
+			text-align: right;
+			margin: 16px 0;
+
+			.text-redirect {
+				text-decoration: underline;
+				cursor: pointer;
+
+				&:hover {
+					color: rgb(26, 215, 222);
+				}
+			}
+		}
+	}
+}
